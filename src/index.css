@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Syne", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-body: "DM Sans", sans-serif;
+}
+
+/* This line is critical for Tailwind v4 + React class-based toggling */
+@variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    @apply transition-colors duration-300 bg-slate-50 text-slate-900;
+  }
+  .dark body {
+    @apply bg-[#080b10] text-white;
+  }
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+/* Custom Selection to match your brand */
+::selection {
+  background: rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+}
