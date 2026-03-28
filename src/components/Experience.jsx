@@ -4,27 +4,51 @@ import { motion } from 'framer-motion';
 const workHistory = [
   {
     company: "Cognizant × ANZ Bank",
-    role: "Java Full Stack Developer",
-    location: "Noida, India (Remote/Australia Support)",
-    period: "Sep 2024 — Present",
+    role: "Java Backend Developer",
+    location: "Noida, India",
+    period: "Aug 2024 — Present",
     points: [
-      "Engineered Java 17 / Spring Boot REST APIs supporting high-volume loan lifecycle workflows for thousands of daily transactions.",
-      "Architected an event-driven notification system integrating Amazon SES and Thymeleaf templates for automated, personalized customer communications.",
-      "Designed a custom state-machine engine to manage complex loan status transitions, ensuring transactional consistency across distributed services.",
-      "Built an automated bulk data ingestion service using Spring Batch and Apache POI, eliminating manual entry for 500+ daily records.",
-      "Reduced P95 API latency by 20% through service-layer refactoring and Splunk-based bottleneck identification.",
-      "Maintained 85% test coverage and resolved 300+ SonarQube issues to meet strict banking compliance standards."
+      "Architecting high-availability loan origination and lifecycle microservices using Java 17 and Spring Boot for ANZ Banking Group.",
+      "Cut P95 API latency by 20% through targeted service-layer refactoring and DB schema optimization guided by Splunk log analysis.",
+      "Engineered a state-machine workflow engine to manage 8 distinct loan lifecycle states, ensuring transactional consistency and zero invalid transitions.",
+      "Designed an event-driven notification system integrating Amazon SES and Thymeleaf, automating customer communications at critical milestones.",
+      "Automated bulk customer data uploads with a Spring Batch ingestion service, processing 500+ daily records and replacing 3 hours of manual entry.",
+      "Resolved 300+ SonarQube quality issues and increased unit test coverage to 85% ahead of a major production release."
     ]
   },
   {
-    company: "PayTM Payments Bank",
-    role: "Software Engineer Trainee",
-    location: "Noida, India",
+    company: "Cognizant",
+    role: "Java Full Stack Developer Intern",
+    location: "Pune, India",
+    period: "Jan 2024 — May 2024",
+    points: [
+      "Completed an intensive enablement program focused on Java 17, Spring Boot 3.x, and React 18, mastering enterprise-grade architecture.",
+      "Developed simulated enterprise modules utilizing Spring MVC and Hibernate/JPA, focusing on RESTful API design and data persistence.",
+      "Gained hands-on experience implementing Spring Security frameworks for Role-Based Access Control (RBAC) and stateless authentication."
+    ]
+  },
+  {
+    company: "Paytm Payments Bank (UPI Switch)",
+    role: "Software Engineer",
+    location: "Noida, India (Hybrid)",
     period: "Oct 2023 — Dec 2023",
     points: [
-      "Contributed to the UPI Switch payment system, developing core transaction validation logic in Java and Spring.",
-      "Diagnosed production bottlenecks via Kibana log analysis and improved system reliability.",
-      "Achieved 85%+ unit test coverage using JUnit and TestNG to ensure zero-defect payment flows."
+      "Contributed to the UPI Switch payment system, a mission-critical routing engine processing over 2 million daily bank-to-bank transactions.",
+      "Developed a Spring Boot notification microservice that consumed Kafka events to enable real-time customer alerts without impacting core API latency.",
+      "Engineered a validation Producer/Consumer service for real-time UPI flows, ensuring 100% message delivery and payment integrity across distributed nodes.",
+      "Diagnosed and resolved critical backend bottlenecks via Kibana, achieving a 15% reduction in P99 response times for high-traffic routes."
+    ]
+  },
+  {
+    company: "Paytm Payments Bank",
+    role: "Software Engineer Intern",
+    location: "Noida, India",
+    period: "Apr 2023 — Sep 2023",
+    points: [
+      "Assisted in building and maintaining RESTful API endpoints for internal banking tools, focusing on clean code and SOLID principles.",
+      "Strengthened system reliability by writing unit tests with JUnit, helping the team maintain an 85% code coverage standard.",
+      "Monitored production API health and tracked error logs using Kibana during high-traffic periods.",
+      "Participated in daily stand-ups and sprint planning, gaining hands-on experience with Jira for task tracking and Git for version control"
     ]
   }
 ];
