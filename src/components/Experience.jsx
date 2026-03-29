@@ -16,17 +16,20 @@ const workHistory = [
       "Resolved 300+ SonarQube quality issues and increased unit test coverage to 85% ahead of major production banking releases."
     ]
   },
-  {
-    company: "Cognizant",
-    role: "Java Full Stack Developer Intern",
-    location: "Pune, India",
-    period: "Jan 2024 — May 2024",
-    points: [
-      "Completed a rigorous 5-month Full-Stack Enablement program, mastering Java 17, Spring Boot 3.x, and React 18 through 4 phases of technical validation.",
-      "Architected modular banking services utilizing Spring Security 6 (JWT/RBAC) and Hibernate/JPA, clearing all technical juries with top-tier ratings.",
-      "Implemented enterprise-grade quality gates by resolving 300+ SonarQube vulnerabilities and maintaining 85%+ JUnit test coverage across developed modules."
-    ]
-  },
+ {
+    company: "Cognizant",
+    role: "Java Full Stack Developer Intern",
+    location: "Pune, India",
+    period: "Jan 2024 — May 2024",
+    points: [
+      <>Completed a rigorous 5-6 month Full-Stack Enablement program focused on Java 17, Spring Boot 3.x, and React 18, mastering enterprise-grade development standards.</>,
+      <>Developed a series of simulated enterprise modules utilizing Spring MVC and Hibernate/JPA, focusing on RESTful API design and relational database management.</>,
+      <>Gained hands-on experience implementing Spring Security frameworks, specifically Role-Based Access Control (RBAC) and stateless authentication mechanisms.</>,
+      <>Cleared three milestone technical evaluations spanning Core Java and Microservices design with high ratings for code quality and logic.</>,
+      <>Integrated JUnit 5 and Mockito for unit testing, resolving SonarQube vulnerabilities to meet production-grade quality gates.</>,
+      <>Collaborated in a structured Agile environment, participating in sprint planning and utilizing Git and Maven for version control and dependency management.</>
+    ]
+  },
   {
     company: "Paytm Payments Bank (UPI Switch)",
     role: "Software Engineer",

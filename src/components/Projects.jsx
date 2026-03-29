@@ -47,15 +47,15 @@ const projects = [
   },
   {
     type: "Payment Infrastructure",
-    title: "UPI Switch & Event Systems",
+    title: "UPI Switch & Global Systems",
     subtitle: "Paytm Payments Bank",
-    desc: "Contributed to the mission-critical UPI Switch routing 2M+ daily transactions. Developed a Kafka-based microservice to consume transaction events, enabling real-time alerts without impacting core payment API latency.",
-    tags: ["Java", "Spring Boot", "Apache Kafka", "Kibana", "Microservices"],
+    desc: "Architected high-volume routing logic for a switch processing 2M+ daily transactions. Re-engineered the engine for 'Credit Line on UPI' and automated status resolution for UPI LITE, while refactoring core libraries for international (NRE/NRO) onboarding.",
+    tags: ["Java 17", "Spring Boot", "Apache Kafka", "Kibana", "Microservices", "JUnit"],
     features: [
-      { icon: <Zap size={14} />, text: "15% Improvement in P99 Response" },
-      { icon: <ShieldCheck size={14} />, text: "Kafka-driven Event Architecture" },
-      { icon: <CreditCard size={14} />, text: "High-Volume Transaction Integrity" },
-      { icon: <History size={14} />, text: "Kibana Log Analysis & RCA" }
+      { icon: <CreditCard size={14} />, text: "2M+ Daily Transaction Routing" },
+      { icon: <Zap size={14} />, text: "UPI LITE Status Enquiry API" },
+      { icon: <ShieldCheck size={14} />, text: "Credit Line & NRE/NRO Logic" },
+      { icon: <RefreshCcw size={14} />, text: "10+ Legacy REST Modules Refactored" }
     ],
     isBackend: true
   }
