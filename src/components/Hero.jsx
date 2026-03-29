@@ -38,7 +38,7 @@ const Hero = () => {
             transition={{ delay: 0.2 }}
             className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-xl leading-relaxed mb-10"
           >
-            Building **scalable, fault-tolerant financial systems**. Currently a Java Backend Developer at **Cognizant**, engineering mission-critical APIs for **ANZ Bank** with a focus on high-concurrency and production reliability.
+            I build the backend systems that power modern banking. Currently a Java Developer at <strong>Cognizant (ANZ Bank)</strong>, focused on making <strong>Fintech</strong> processes faster, more reliable, and ready for high traffic.
           </motion.p>
 
           <motion.div 
@@ -121,7 +121,7 @@ const Hero = () => {
                 </div>
                 <div className="ml-6 flex items-center gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
-                  <span className="italic text-slate-500 dark:text-slate-400">Currently optimizing ANZ Bank loan systems...</span>
+                  <span className="italic text-slate-500 dark:text-slate-400">Optimizing ANZ Bank systems...</span>
                 </div>
               </div>
             </div>

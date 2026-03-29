@@ -16,41 +16,46 @@ const projects = [
   {
     type: "Featured Platform",
     title: "BugTrackr",
-    subtitle: "Full-Stack Defect Management",
-    desc: "A production-deployed platform with role-based access for Testers, Developers, and Owners. Features a complete bug lifecycle: Open → In Progress → Resolved → Closed.",
-    tags: ["Spring Boot 3", "React 18", "JWT", "Azure", "MySQL"],
+    subtitle: "Full-Stack Defect Management System",
+    desc: "A production-grade platform featuring a robust bug lifecycle (Open → Resolved) with secure RBAC. Implements a custom drag-and-drop Kanban board and a DB-backed immutable audit trail.",
+    tags: ["Spring Boot 3", "React 18", "JWT", "Azure", "PostgreSQL"],
     features: [
-      { icon: <ShieldCheck size={14} />, text: "JWT Stateless Auth + HS256 Guards" },
-      { icon: <RefreshCcw size={14} />, text: "Kanban Board" },
-      { icon: <History size={14} />, text: "Immutable Audit Trail (Actor/Role/TS)" },
+      { icon: <ShieldCheck size={14} />, text: "JWT Stateless Auth & Role Guards" },
+      { icon: <RefreshCcw size={14} />, text: "Interactive Kanban Workflow" },
+      { icon: <History size={14} />, text: "Immutable Change Audit Logs" },
       { icon: <Bell size={14} />, text: "Live DB-backed Notifications" }
     ],
-    links: { github: "#", live: "#" },
+    links: { 
+      github: "https://github.com/krtksharma/defect-tracker-backend", 
+      live: "https://defect-tracker-frontend.vercel.app/" 
+    },
     highlight: "CI/CD: GitHub Actions → Azure App Service"
   },
   {
     type: "Enterprise Fintech",
     title: "Loan Lifecycle Engine",
-    subtitle: "ANZ Bank (via Cognizant)",
-    desc: "State-machine workflow engine managing complex loan transitions with transactional consistency. Processes 500+ records daily via automated Spring Batch ingestion.",
-    tags: ["Java 17", "Spring Batch", "State Machine", "Amazon SES"],
+    subtitle: "ANZ Banking Group (via Cognizant)",
+    desc: "Engineered a high-availability state-machine workflow managing 8 distinct loan states. Implemented automated Spring Batch ingestion for bulk data processing, eliminating manual entry bottlenecks.",
+    tags: ["Java 17", "Spring Boot", "Spring Batch", "Amazon SES", "Splunk"],
     features: [
       { icon: <Zap size={14} />, text: "20% Reduction in P95 Latency" },
-      { icon: <Database size={14} />, text: "Spring Batch + Apache POI Ingestion" },
-      { icon: <ShieldCheck size={14} />, text: "Event-driven Amazon SES Alerts" }
+      { icon: <Database size={14} />, text: "Automated 500+ Daily Record Ingestion" },
+      { icon: <ShieldCheck size={14} />, text: "Transactional Consistency Logic" },
+      { icon: <Bell size={14} />, text: "Event-driven SES Communications" }
     ],
     isBackend: true
   },
   {
     type: "Payment Infrastructure",
-    title: "UPI Switch Backend",
-    subtitle: "PayTM Payments Bank",
-    desc: "Core transaction-processing and validation services for high-volume UPI flows. Optimized for 99.9% reliability under peak holiday transaction loads.",
-    tags: ["Java", "Spring Boot", "JUnit", "Kibana"],
+    title: "UPI Switch & Event Systems",
+    subtitle: "Paytm Payments Bank",
+    desc: "Contributed to the mission-critical UPI Switch routing 2M+ daily transactions. Developed a Kafka-based microservice to consume transaction events, enabling real-time alerts without impacting core payment API latency.",
+    tags: ["Java", "Spring Boot", "Apache Kafka", "Kibana", "Microservices"],
     features: [
-      { icon: <CreditCard size={14} />, text: "High-Concurrency Transaction Logic" },
-      { icon: <ShieldCheck size={14} />, text: "85%+ JUnit/TestNG Coverage" },
-      { icon: <History size={14} />, text: "Kibana Log-based Root Cause Analysis" }
+      { icon: <Zap size={14} />, text: "15% Improvement in P99 Response" },
+      { icon: <ShieldCheck size={14} />, text: "Kafka-driven Event Architecture" },
+      { icon: <CreditCard size={14} />, text: "High-Volume Transaction Integrity" },
+      { icon: <History size={14} />, text: "Kibana Log Analysis & RCA" }
     ],
     isBackend: true
   }

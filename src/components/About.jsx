@@ -1,12 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { GraduationCap, Award, Target, Zap } from 'lucide-react';
+import { GraduationCap, Target, Zap, Activity } from 'lucide-react';
 
 const About = () => {
   const stats = [
-    { label: "P95 Latency Cut", value: "20%", icon: <Zap size={18} /> },
-    { label: "Test Coverage", value: "85%", icon: <Target size={18} /> },
-  ];
+  { label: "Peak Throughput", value: "1.5K/sec", icon: <Zap size={18} /> }, 
+  { label: "P95 Latency Cut", value: "20%", icon: <Activity size={18} /> },
+  { label: "Test Coverage", value: "85%", icon: <Target size={18} /> },
+];
 
   return (
     <section id="about" className="py-24 px-6 lg:px-12 bg-white dark:bg-[#080b10]">
@@ -25,16 +26,16 @@ const About = () => {
             className="lg:col-span-7 space-y-6"
           >
             <h3 className="text-4xl font-display font-bold dark:text-white leading-tight">
-              Engineering <span className="text-blue-600">Reliability</span> into Financial Systems.
+              Building the <span className="text-blue-600">Backend Systems</span> that power modern banking.
             </h3>
             <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-              I am a Java Backend Developer at **Cognizant**, architecting mission-critical infrastructure for **ANZ Bank**. I specialize in building fault-tolerant systems—from state-machine engines to event-driven notification layers—where transactional consistency is non-negotiable.
+              At <strong>Cognizant</strong>, I focus on making ANZ Bank’s loan processes faster and more reliable. My experience at <strong>Paytm</strong> taught me how to handle millions of transactions without a hitch, ensuring that high-volume systems stay stable under pressure.
             </p>
             <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-              My approach integrates deep technical execution with production observability. By leveraging Splunk analytics and maintaining rigorous JUnit standards, I ensure every deployment enhances system performance and security.
+              I enjoy solving the <strong>'invisible' problems</strong>: ensuring data stays accurate, notifications stay instant, and the system stays fast even during peak traffic. Whether it's architecting state-machine workflows or optimizing database queries, I build software that users can trust with their money, 100% of the time.
             </p>
 
-            <div className="flex gap-4 pt-4">
+            <div className="flex flex-wrap gap-4 pt-4">
               {stats.map((stat, i) => (
                 <div key={i} className="flex items-center gap-3 px-5 py-3 rounded-2xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/5">
                   <div className="text-blue-600">{stat.icon}</div>
@@ -55,7 +56,6 @@ const About = () => {
             className="lg:col-span-5"
           >
             <div className="p-8 rounded-3xl bg-blue-600 text-white relative overflow-hidden shadow-2xl shadow-blue-600/20">
-              {/* Decorative Background Icon */}
               <GraduationCap className="absolute -right-8 -bottom-8 w-48 h-48 opacity-10 rotate-12" />
               
               <div className="relative z-10">
@@ -68,7 +68,7 @@ const About = () => {
 
                 <div className="space-y-8">
                   <div>
-                    <p className="text-xs font-mono uppercase opacity-70 mb-1">University / College</p>
+                    <p className="text-xs font-mono uppercase opacity-70 mb-1">University</p>
                     <h5 className="text-xl font-bold leading-snug">
                       Dr. A.P.J. Abdul Kalam Technical University
                     </h5>
@@ -77,21 +77,20 @@ const About = () => {
 
                   <div className="grid grid-cols-2 gap-4 pt-6 border-t border-white/20">
                     <div>
-                      <p className="text-xs font-mono uppercase opacity-70 mb-1">Grade / CGPA</p>
+                      <p className="text-xs font-mono uppercase opacity-70 mb-1">CGPA</p>
                       <div className="flex items-baseline gap-1">
                         <span className="text-3xl font-black">8.01</span>
                         <span className="text-sm opacity-70">/ 10.0</span>
                       </div>
                     </div>
                     <div>
-                      <p className="text-xs font-mono uppercase opacity-70 mb-1">Focus</p>
-                      <p className="text-sm font-bold uppercase tracking-tighter">Software Eng.</p>
+                      <p className="text-xs font-mono uppercase opacity-70 mb-1">Specialization</p>
+                      <p className="text-sm font-bold uppercase tracking-tighter">Software Systems</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
           </motion.div>
         </div>
       </div>

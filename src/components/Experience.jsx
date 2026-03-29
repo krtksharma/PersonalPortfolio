@@ -52,7 +52,6 @@ const workHistory = [
     ]
   }
 ];
-
 const Experience = () => {
   return (
     <section id="experience" className="py-24 px-6 lg:px-12 bg-slate-50 dark:bg-[#0d1117]">
